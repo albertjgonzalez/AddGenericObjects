@@ -6,9 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.triviagame.WelcomeController">
-    <TextField fx:id="nameField" layoutX="100" layoutY="100"/>
-    <Button text="Start Game" layoutX="100" layoutY="150" onAction="#handleStartGame"/>
-</AnchorPane>
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.triviagame.WelcomeController"
+      prefHeight="400" prefWidth="600">
+    <children>
+        <Label text="Welcome to the Trivia Game!" style="-fx-font-size: 24;" />
+        <Label text="Enter your name to start the game:" style="-fx-font-size: 16;" />
+        <TextField fx:id="nameField" maxWidth="200" />
+        <Button text="Start Game" onAction="#handleStartGame" style="-fx-font-size: 16; -fx-padding: 10;" />
+    </children>
+</VBox>
