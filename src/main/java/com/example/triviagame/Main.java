@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -27,7 +28,14 @@ public class Main extends Application {
         Main.userName = userName;
 
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 500, 600);
+
+        // Set minimum and maximum dimensions for the stage
+        stage.setMinWidth(500);
+        stage.setMinHeight(600);
+        stage.setMaxWidth(600);
+        stage.setMaxHeight(600);
+
         stage.setScene(scene);
     }
 }

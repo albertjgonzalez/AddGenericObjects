@@ -1,4 +1,4 @@
-package com.example.triviagame;
+package com.example.triviagame.database;
 import java.sql.*;
 
 public class DatabaseManager {

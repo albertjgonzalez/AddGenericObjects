@@ -1,5 +1,6 @@
-package com.example.triviagame;
+package com.example.triviagame.controller;
 
+import com.example.triviagame.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
