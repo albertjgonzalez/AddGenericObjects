@@ -13,7 +13,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("welcome-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/com/example/triviagame/fxml/welcome-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Trivia Game");
         stage.setScene(scene);
@@ -27,7 +27,7 @@ public class Main extends Application {
     public static void loadMainView(String userName, Stage stage) throws IOException {
         Main.userName = userName;
 
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/com/example/triviagame/fxml/main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 500, 600);
 
         // Set minimum and maximum dimensions for the stage
